@@ -4,6 +4,14 @@ references: https://docs.redhat.com/en/documentation/red_hat_update_infrastructu
 
 https://docs.docker.com/engine/install/linux-postinstall/
 
+Install java and docker on the slave
+note: be sure to install ssh on the two machines
+
+Generate a ssh key on the master node then copy the public key to the slave
+ssh-keygen -t ecdsa -b 384
+ssh-copy-id jenkins@Slave
+
+![image](https://github.com/user-attachments/assets/ac9ce732-7483-4bdf-98f9-35d108b5cc86)
 
 
 
